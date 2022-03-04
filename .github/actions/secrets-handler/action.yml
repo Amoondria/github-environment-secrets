@@ -1,0 +1,20 @@
+name: Secrets Handler
+description: Accepts secrets as inputs and runs echo commands to prove they were successfully passed (the secrets will not be displayed, instead we will see something like ***)
+
+inputs:
+  username:
+    description: Accepts username
+    required: true
+  purpose:
+    description: displays purpose
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run: |   
+        echo This is a github action,
+        echo Testing if secrets were passed into the action as inputs.
+        echo Testing secrets 1: ${{ inputs.USERNAME }}
+        echo Testing secrets 2: ${{ inputs.PURPOSE }}    
+      shell: bash
