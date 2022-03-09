@@ -1,6 +1,6 @@
-Write Your comments here
+*Write Your comments here*
 
 PBIs:
-- Enter your Urls here
-- Enter your secone Url here
-- Etc.
+- *Enter your URLs in the following manner*
+- *http://www.github.com*
+- *Etc*
