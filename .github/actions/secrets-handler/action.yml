@@ -14,7 +14,7 @@ runs:
   steps:
     - run: |   
         echo This is a github action,
-        echo Testing if secrets were passed into the action as inputs.
+        echo Testing if secrets are encrypted
         echo Testing secrets 1: ${{ inputs.USERNAME }}
         echo Testing secrets 2: ${{ inputs.PURPOSE }}    
       shell: bash
